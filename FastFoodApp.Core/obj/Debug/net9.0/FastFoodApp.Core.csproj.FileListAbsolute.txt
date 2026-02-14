@@ -1,0 +1,11 @@
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\bin\Debug\net9.0\FastFoodApp.Core.deps.json
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\bin\Debug\net9.0\FastFoodApp.Core.dll
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\bin\Debug\net9.0\FastFoodApp.Core.pdb
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\FastFoodApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\FastFoodApp.Core.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\FastFoodApp.Core.AssemblyInfo.cs
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\FastFoodApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\FastFoodApp.Core.dll
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\refint\FastFoodApp.Core.dll
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\FastFoodApp.Core.pdb
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\ref\FastFoodApp.Core.dll

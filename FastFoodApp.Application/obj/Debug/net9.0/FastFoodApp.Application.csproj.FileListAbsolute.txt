@@ -1,0 +1,15 @@
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\bin\Debug\net9.0\FastFoodApp.Application.deps.json
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\bin\Debug\net9.0\FastFoodApp.Application.dll
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\bin\Debug\net9.0\FastFoodApp.Application.pdb
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\bin\Debug\net9.0\FastFoodApp.Core.dll
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\bin\Debug\net9.0\FastFoodApp.Core.pdb
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\obj\Debug\net9.0\FastFoodApp.Application.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\obj\Debug\net9.0\FastFoodApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\obj\Debug\net9.0\FastFoodApp.Application.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\obj\Debug\net9.0\FastFoodApp.Application.AssemblyInfo.cs
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\obj\Debug\net9.0\FastFoodApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\obj\Debug\net9.0\FastFood.DEA76452.Up2Date
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\obj\Debug\net9.0\FastFoodApp.Application.dll
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\obj\Debug\net9.0\refint\FastFoodApp.Application.dll
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\obj\Debug\net9.0\FastFoodApp.Application.pdb
+C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Application\obj\Debug\net9.0\ref\FastFoodApp.Application.dll
