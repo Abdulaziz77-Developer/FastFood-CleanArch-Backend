@@ -1,4 +1,4 @@
-namespace FastFoodApp.Application.DTOs.Food;
+namespace FastFoodApp.Application.DTOs.FoodDTO;
 
 public record FoodUpdateDto(
     string Name, 

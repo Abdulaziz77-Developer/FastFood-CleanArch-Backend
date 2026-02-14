@@ -19,10 +19,12 @@ public class FoodRepository : IFoodRepository
         await _context.Foods.Where(f => f.CategoryId == categoryId).ToListAsync();
 
     public async Task AddAsync(Food food) => await _context.Foods.AddAsync(food);
-    public async Task UpdateAsync(Food food) => _context.Foods.Update(food);
+    public async Task UpdateAsync(Food food) => await Task.FromResult(_context.Foods.Update(food));
+    public void Update(Food food) => _context.Foods.Update(food);
     public async Task DeleteAsync(Guid id) 
     {
         var food = await _context.Foods.FindAsync(id);
         if (food != null) _context.Foods.Remove(food);
     }
+    public void Delete(Food food) => _context.Foods.Remove(food);
 }

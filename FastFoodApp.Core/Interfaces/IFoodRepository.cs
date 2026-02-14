@@ -11,4 +11,6 @@ public interface IFoodRepository
     Task AddAsync(Food food);
     Task UpdateAsync(Food food);
     Task DeleteAsync(Guid id);
+    void Update(Food food);
+    void Delete(Food food);
 }
