@@ -25,6 +25,19 @@ public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
         builder.HasOne(c => c.User)
             .WithOne()
             .HasForeignKey<Customer>(c => c.UserId)
-            .OnDelete(DeleteBehavior.Cascade); 
+            .OnDelete(DeleteBehavior.Cascade);
+
+        // Demo data
+        var customerId = new Guid("550e8400-e29b-41d4-a716-446655440000");
+        builder.HasData(
+            new Customer
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440050"),
+                UserId = customerId,
+                Phone = "+1-555-0100",
+                Address = "123 Main Street, Apt 4B",
+                City = "New York"
+            }
+        );
     }
 }

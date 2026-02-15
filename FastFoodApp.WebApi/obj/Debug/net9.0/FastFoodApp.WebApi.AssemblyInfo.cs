@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FastFoodApp.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33ef5c1c9a438ce5dbb5cb2f81f3c3636d921f0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8e53d91f28bc17b01ab379fad9b5b29e1d8176f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FastFoodApp.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FastFoodApp.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

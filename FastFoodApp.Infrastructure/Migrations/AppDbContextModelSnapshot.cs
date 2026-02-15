@@ -36,6 +36,28 @@ namespace FastFoodApp.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440010"),
+                            Name = "Pizza"
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440011"),
+                            Name = "Burgers"
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440012"),
+                            Name = "Salads"
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440013"),
+                            Name = "Beverages"
+                        });
                 });
 
             modelBuilder.Entity("FastFoodApp.Core.Entities.Customer", b =>
@@ -68,6 +90,16 @@ namespace FastFoodApp.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Customers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440050"),
+                            Address = "123 Main Street, Apt 4B",
+                            City = "New York",
+                            Phone = "+1-555-0100",
+                            UserId = new Guid("550e8400-e29b-41d4-a716-446655440000")
+                        });
                 });
 
             modelBuilder.Entity("FastFoodApp.Core.Entities.Food", b =>
@@ -110,6 +142,63 @@ namespace FastFoodApp.Infrastructure.Migrations
                     b.HasIndex("SupplierId");
 
                     b.ToTable("Foods");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440030"),
+                            CategoryId = new Guid("550e8400-e29b-41d4-a716-446655440010"),
+                            Description = "Classic pizza with tomato sauce, mozzarella, and basil",
+                            ImageUrl = "https://example.com/margherita.jpg",
+                            IsAvailable = true,
+                            Name = "Margherita Pizza",
+                            Price = 12.99m,
+                            SupplierId = new Guid("550e8400-e29b-41d4-a716-446655440020")
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440031"),
+                            CategoryId = new Guid("550e8400-e29b-41d4-a716-446655440010"),
+                            Description = "Pizza with tomato sauce, mozzarella, and pepperoni",
+                            ImageUrl = "https://example.com/pepperoni.jpg",
+                            IsAvailable = true,
+                            Name = "Pepperoni Pizza",
+                            Price = 14.99m,
+                            SupplierId = new Guid("550e8400-e29b-41d4-a716-446655440020")
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440032"),
+                            CategoryId = new Guid("550e8400-e29b-41d4-a716-446655440011"),
+                            Description = "Juicy burger with beef patty, lettuce, tomato, and special sauce",
+                            ImageUrl = "https://example.com/burger.jpg",
+                            IsAvailable = true,
+                            Name = "Classic Burger",
+                            Price = 9.99m,
+                            SupplierId = new Guid("550e8400-e29b-41d4-a716-446655440021")
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440033"),
+                            CategoryId = new Guid("550e8400-e29b-41d4-a716-446655440011"),
+                            Description = "Burger with beef patty, cheddar cheese, and all the toppings",
+                            ImageUrl = "https://example.com/cheeseburger.jpg",
+                            IsAvailable = true,
+                            Name = "Cheeseburger",
+                            Price = 10.99m,
+                            SupplierId = new Guid("550e8400-e29b-41d4-a716-446655440021")
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440034"),
+                            CategoryId = new Guid("550e8400-e29b-41d4-a716-446655440012"),
+                            Description = "Fresh romaine lettuce with parmesan and caesar dressing",
+                            ImageUrl = "https://example.com/caesar-salad.jpg",
+                            IsAvailable = true,
+                            Name = "Caesar Salad",
+                            Price = 8.99m,
+                            SupplierId = new Guid("550e8400-e29b-41d4-a716-446655440020")
+                        });
                 });
 
             modelBuilder.Entity("FastFoodApp.Core.Entities.Order", b =>
@@ -145,6 +234,26 @@ namespace FastFoodApp.Infrastructure.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Orders");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440060"),
+                            CreatedAt = new DateTime(2026, 2, 15, 16, 13, 43, 193, DateTimeKind.Utc).AddTicks(3565),
+                            DeliveryAddress = "123 Main Street, Apt 4B, New York",
+                            Status = "Pending",
+                            TotalAmount = 27.98m,
+                            UserId = new Guid("550e8400-e29b-41d4-a716-446655440000")
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440061"),
+                            CreatedAt = new DateTime(2026, 2, 14, 16, 13, 43, 193, DateTimeKind.Utc).AddTicks(4043),
+                            DeliveryAddress = "123 Main Street, Apt 4B, New York",
+                            Status = "Delivered",
+                            TotalAmount = 20.98m,
+                            UserId = new Guid("550e8400-e29b-41d4-a716-446655440000")
+                        });
                 });
 
             modelBuilder.Entity("FastFoodApp.Core.Entities.OrderItem", b =>
@@ -173,6 +282,32 @@ namespace FastFoodApp.Infrastructure.Migrations
                     b.HasIndex("OrderId");
 
                     b.ToTable("OrderItems");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440070"),
+                            FoodId = new Guid("550e8400-e29b-41d4-a716-446655440030"),
+                            OrderId = new Guid("550e8400-e29b-41d4-a716-446655440060"),
+                            Price = 12.99m,
+                            Quantity = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440071"),
+                            FoodId = new Guid("550e8400-e29b-41d4-a716-446655440031"),
+                            OrderId = new Guid("550e8400-e29b-41d4-a716-446655440060"),
+                            Price = 14.99m,
+                            Quantity = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440072"),
+                            FoodId = new Guid("550e8400-e29b-41d4-a716-446655440032"),
+                            OrderId = new Guid("550e8400-e29b-41d4-a716-446655440061"),
+                            Price = 9.99m,
+                            Quantity = 2
+                        });
                 });
 
             modelBuilder.Entity("FastFoodApp.Core.Entities.Supplier", b =>
@@ -204,6 +339,24 @@ namespace FastFoodApp.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Suppliers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440020"),
+                            City = "New York",
+                            ImageUrl = "https://example.com/pizza-palace.jpg",
+                            RestaurantName = "Pizza Palace",
+                            UserId = new Guid("550e8400-e29b-41d4-a716-446655440002")
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440021"),
+                            City = "Los Angeles",
+                            ImageUrl = "https://example.com/burger-king.jpg",
+                            RestaurantName = "Burger King Local",
+                            UserId = new Guid("550e8400-e29b-41d4-a716-446655440004")
+                        });
                 });
 
             modelBuilder.Entity("FastFoodApp.Core.Entities.User", b =>
@@ -211,6 +364,9 @@ namespace FastFoodApp.Infrastructure.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -235,6 +391,53 @@ namespace FastFoodApp.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440000"),
+                            CreatedAt = new DateTime(2026, 2, 15, 16, 13, 43, 206, DateTimeKind.Utc).AddTicks(4547),
+                            Email = "customer@example.com",
+                            FullName = "John Customer",
+                            PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p",
+                            Role = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440001"),
+                            CreatedAt = new DateTime(2026, 2, 15, 16, 13, 43, 206, DateTimeKind.Utc).AddTicks(5007),
+                            Email = "admin@example.com",
+                            FullName = "Admin User",
+                            PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p",
+                            Role = 2
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440002"),
+                            CreatedAt = new DateTime(2026, 2, 15, 16, 13, 43, 206, DateTimeKind.Utc).AddTicks(5010),
+                            Email = "pizzapalace@example.com",
+                            FullName = "Pizza Palace Owner",
+                            PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p",
+                            Role = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440004"),
+                            CreatedAt = new DateTime(2026, 2, 15, 16, 13, 43, 206, DateTimeKind.Utc).AddTicks(5012),
+                            Email = "burgerking@example.com",
+                            FullName = "Burger King Local Owner",
+                            PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p",
+                            Role = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("550e8400-e29b-41d4-a716-446655440003"),
+                            CreatedAt = new DateTime(2026, 2, 15, 16, 13, 43, 206, DateTimeKind.Utc).AddTicks(5015),
+                            Email = "courier@example.com",
+                            FullName = "Fast Courier",
+                            PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p",
+                            Role = 3
+                        });
                 });
 
             modelBuilder.Entity("FastFoodApp.Core.Entities.Customer", b =>

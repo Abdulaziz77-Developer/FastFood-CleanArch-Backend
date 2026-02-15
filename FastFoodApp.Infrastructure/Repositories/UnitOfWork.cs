@@ -12,6 +12,8 @@ public class UnitOfWork : IUnitOfWork
     public IFoodRepository Foods { get; }
     public IOrderRepository Orders { get; }
     public ICategoryRepository Categories { get; }
+    public ISupplierRepository Suppliers { get; }
+    public ICustomerRepository Customers { get; }
 
     public UnitOfWork(AppDbContext context)
     {
@@ -21,6 +23,8 @@ public class UnitOfWork : IUnitOfWork
         Foods = new FoodRepository(_context);
         Orders = new OrderRepository(_context);
         Categories = new CategoryRepository(_context);
+        Suppliers = new SupplierRepository(_context);
+        Customers = new CustomerRepository(_context);
     }
 
     public async Task<int> SaveChangesAsync() => await _context.SaveChangesAsync();

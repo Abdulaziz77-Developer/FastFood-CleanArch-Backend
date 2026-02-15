@@ -1,5 +1,6 @@
 using FastFoodApp.Core.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace FastFoodApp.Infrastructure.Data;
 
@@ -19,6 +20,14 @@ public class AppDbContext : DbContext
     public DbSet<Customer> Customers => Set<Customer>();
     public DbSet<Supplier> Suppliers => Set<Supplier>();
     public DbSet<OrderItem> OrderItems => Set<OrderItem>();
+
+    // Конфигурируем поведение DbContext (валидация миграций)
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        base.OnConfiguring(optionsBuilder);
+        optionsBuilder.ConfigureWarnings(w => 
+            w.Ignore(RelationalEventId.PendingModelChangesWarning));
+    }
 
     // Настройка связей и конфигураций
     protected override void OnModelCreating(ModelBuilder modelBuilder)

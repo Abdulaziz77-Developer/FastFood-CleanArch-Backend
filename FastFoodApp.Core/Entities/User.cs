@@ -11,6 +11,9 @@ public class User
     // Добавляем роль
     public Role Role { get; set; } = Role.Customer;
 
+    // Дата создания
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
     // Связь с заказами (один пользователь может иметь много заказов)
     public ICollection<Order> Orders { get; set; } = new List<Order>();
 }

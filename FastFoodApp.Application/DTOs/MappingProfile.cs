@@ -51,6 +51,7 @@ public class MappingProfile : Profile
         CreateMap<FoodUpdateDto, Food>()
             .ForAllMembers(opts => opts.Condition((src, dest, srcValue) => srcValue != null));
         
+        CreateMap<UserUpdateDto, User>();
         CreateMap<CategoryUpdateDto, Category>();
         CreateMap<CustomerUpdateDto, Customer>();
         CreateMap<SupplierUpdateDto, Supplier>();

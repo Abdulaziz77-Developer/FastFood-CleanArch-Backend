@@ -20,5 +20,28 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
                .WithMany(u => u.Orders)
                .HasForeignKey(o => o.UserId)
                .OnDelete(DeleteBehavior.Cascade); // Удалим юзера — удалятся заказы
+
+        // Demo data
+        var customerId = new Guid("550e8400-e29b-41d4-a716-446655440000");
+        builder.HasData(
+            new Order
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440060"),
+                UserId = customerId,
+                TotalAmount = 27.98m,
+                Status = "Pending",
+                DeliveryAddress = "123 Main Street, Apt 4B, New York",
+                CreatedAt = DateTime.UtcNow
+            },
+            new Order
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440061"),
+                UserId = customerId,
+                TotalAmount = 20.98m,
+                Status = "Delivered",
+                DeliveryAddress = "123 Main Street, Apt 4B, New York",
+                CreatedAt = DateTime.UtcNow.AddDays(-1)
+            }
+        );
     }
 }

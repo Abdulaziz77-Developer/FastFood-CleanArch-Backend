@@ -24,9 +24,29 @@ public class CategoryRepository : ICategoryRepository
         return await _context.Categories.FindAsync(id);
     }
 
-    // Добавляем реализацию метода, который ты указал в интерфейсе
     public async Task AddAsync(Category category)
     {
         await _context.Categories.AddAsync(category);
+    }
+
+    public async Task UpdateAsync(Category category)
+    {
+        await Task.FromResult(_context.Categories.Update(category));
+    }
+
+    public void Update(Category category)
+    {
+        _context.Categories.Update(category);
+    }
+
+    public async Task DeleteAsync(Guid id)
+    {
+        var category = await _context.Categories.FindAsync(id);
+        if (category != null) _context.Categories.Remove(category);
+    }
+
+    public void Delete(Category category)
+    {
+        _context.Categories.Remove(category);
     }
 }

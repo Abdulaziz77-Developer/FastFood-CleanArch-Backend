@@ -15,7 +15,7 @@ public class CustomerRepository : ICustomerRepository
 
     public async Task AddAsync(Customer customer) => await _context.Customers.AddAsync(customer);
 
-    public async Task UpdateAsync(Customer customer) => _context.Customers.Update(customer);
+    public async Task UpdateAsync(Customer customer) => await Task.FromResult(_context.Customers.Update(customer));
 
     public async Task<IEnumerable<Customer>> GetByCityAsync(string city) =>
         await _context.Customers.Where(c => c.City.ToLower() == city.ToLower()).ToListAsync();

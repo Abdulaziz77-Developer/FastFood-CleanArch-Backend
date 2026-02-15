@@ -16,5 +16,29 @@ public class CategoryConfiguration : IEntityTypeConfiguration<Category>
         builder.HasMany(c => c.Foods)
                .WithOne(f => f.Category)
                .HasForeignKey(f => f.CategoryId);
+
+        // Demo data
+        builder.HasData(
+            new Category
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440010"),
+                Name = "Pizza"
+            },
+            new Category
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440011"),
+                Name = "Burgers"
+            },
+            new Category
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440012"),
+                Name = "Salads"
+            },
+            new Category
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440013"),
+                Name = "Beverages"
+            }
+        );
     }
 }

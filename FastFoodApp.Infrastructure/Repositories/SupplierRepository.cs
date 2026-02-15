@@ -26,5 +26,5 @@ public class SupplierRepository : ISupplierRepository
 
     public async Task AddAsync(Supplier supplier) => await _context.Suppliers.AddAsync(supplier);
 
-    public async Task UpdateAsync(Supplier supplier) => _context.Suppliers.Update(supplier);
+    public async Task UpdateAsync(Supplier supplier) => await Task.FromResult(_context.Suppliers.Update(supplier));
 }
