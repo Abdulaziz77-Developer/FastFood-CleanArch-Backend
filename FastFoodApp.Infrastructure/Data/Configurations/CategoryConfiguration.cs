@@ -38,6 +38,36 @@ public class CategoryConfiguration : IEntityTypeConfiguration<Category>
             {
                 Id = new Guid("550e8400-e29b-41d4-a716-446655440013"),
                 Name = "Beverages"
+            },
+            new Category
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440014"),
+                Name = "Desserts"
+            },
+            new Category
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440015"),
+                Name = "Appetizers"
+            },
+            new Category
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440016"),
+                Name = "Pasta"
+            },
+            new Category
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440017"),
+                Name = "Seafood"
+            },
+            new Category
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440018"),
+                Name = "Soups"
+            },
+            new Category
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440019"),
+                Name = "Sandwiches"
             }
         );
     }

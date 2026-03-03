@@ -81,6 +81,61 @@ public class FoodConfiguration : IEntityTypeConfiguration<Food>
                 SupplierId = supplierId1,
                 ImageUrl = "https://example.com/caesar-salad.jpg",
                 IsAvailable = true
+            },
+            new Food
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440035"),
+                Name = "BBQ Burger",
+                Description = "Juicy burger with beef patty, BBQ sauce, and crispy bacon",
+                Price = 11.99m,
+                CategoryId = burgerCategoryId,
+                SupplierId = supplierId2,
+                ImageUrl = "https://example.com/bbq-burger.jpg",
+                IsAvailable = true
+            },
+            new Food
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440036"),
+                Name = "Hawaiian Pizza",
+                Description = "Pizza with pineapple, ham, tomato sauce, and mozzarella",
+                Price = 15.99m,
+                CategoryId = pizzaCategoryId,
+                SupplierId = supplierId1,
+                ImageUrl = "https://example.com/hawaiian-pizza.jpg",
+                IsAvailable = true
+            },
+            new Food
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440037"),
+                Name = "Greek Salad",
+                Description = "Fresh salad with feta cheese, olives, tomatoes, and cucumbers",
+                Price = 9.49m,
+                CategoryId = saladCategoryId,
+                SupplierId = supplierId2,
+                ImageUrl = "https://example.com/greek-salad.jpg",
+                IsAvailable = true
+            },
+            new Food
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440038"),
+                Name = "Double Cheeseburger",
+                Description = "Two beef patties with double cheddar cheese and all the toppings",
+                Price = 13.99m,
+                CategoryId = burgerCategoryId,
+                SupplierId = supplierId2,
+                ImageUrl = "https://example.com/double-cheeseburger.jpg",
+                IsAvailable = true
+            },
+            new Food
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440039"),
+                Name = "Veggie Pizza",
+                Description = "Pizza loaded with fresh vegetables, tomato sauce, and mozzarella",
+                Price = 13.49m,
+                CategoryId = pizzaCategoryId,
+                SupplierId = supplierId1,
+                ImageUrl = "https://example.com/veggie-pizza.jpg",
+                IsAvailable = true
             }
         );
     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FastFoodApp.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8e53d91f28bc17b01ab379fad9b5b29e1d8176f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b45e110324574a4f7ee8a18903b51fb1a0194968")]
 [assembly: System.Reflection.AssemblyProductAttribute("FastFoodApp.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FastFoodApp.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

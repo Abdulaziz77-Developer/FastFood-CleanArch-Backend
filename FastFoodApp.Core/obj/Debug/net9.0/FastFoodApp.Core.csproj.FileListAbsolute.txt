@@ -1,4 +1,4 @@
-C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\bin\Debug\net9.0\FastFoodApp.Core.deps.json
+c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\bin\Debug\net9.0\FastFoodApp.Core.deps.json
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\bin\Debug\net9.0\FastFoodApp.Core.dll
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\bin\Debug\net9.0\FastFoodApp.Core.pdb
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\FastFoodApp.Core.GeneratedMSBuildEditorConfig.editorconfig
@@ -9,4 +9,4 @@ c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\FastFoodApp.Core.dll
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\refint\FastFoodApp.Core.dll
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\FastFoodApp.Core.pdb
-C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\ref\FastFoodApp.Core.dll
+c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.Core\obj\Debug\net9.0\ref\FastFoodApp.Core.dll

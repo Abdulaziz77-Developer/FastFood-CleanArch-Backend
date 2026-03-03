@@ -17,8 +17,18 @@ public class MappingProfile : Profile
         // === МАППИНГ ДЛЯ ЧТЕНИЯ (Read) ===
         // Food -> FoodReadDto (подтягиваем имена из связей)
         CreateMap<Food, FoodReadDto>()
-            .ForMember(d => d.CategoryName, o => o.MapFrom(s => s.Category.Name))
-            .ForMember(d => d.SupplierName, o => o.MapFrom(s => s.Supplier != null ? s.Supplier.RestaurantName : string.Empty));
+            .ConstructUsing(src => new FoodReadDto(
+                src.Id,
+                src.Name,
+                src.Description,
+                src.Price,
+                src.ImageUrl,
+                src.IsAvailable,
+                src.CategoryId,
+                src.Category != null ? src.Category.Name : "Unknown",
+                src.SupplierId,
+                src.Supplier != null ? src.Supplier.RestaurantName : string.Empty
+            ));
 
         // User & Customer -> CustomerReadDto
         CreateMap<Customer, CustomerReadDto>()

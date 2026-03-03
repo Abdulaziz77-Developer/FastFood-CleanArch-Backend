@@ -68,6 +68,51 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
                 PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p", // Password123!
                 Role = Role.Courier,
                 CreatedAt = DateTime.UtcNow
+            },
+            new User
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440005"),
+                FullName = "Sarah Johnson",
+                Email = "sarah.johnson@example.com",
+                PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p",
+                Role = Role.Customer,
+                CreatedAt = DateTime.UtcNow.AddDays(-10)
+            },
+            new User
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440006"),
+                FullName = "Michael Smith",
+                Email = "michael.smith@example.com",
+                PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p",
+                Role = Role.Customer,
+                CreatedAt = DateTime.UtcNow.AddDays(-8)
+            },
+            new User
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440007"),
+                FullName = "Emily Davis",
+                Email = "emily.davis@example.com",
+                PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p",
+                Role = Role.Courier,
+                CreatedAt = DateTime.UtcNow.AddDays(-5)
+            },
+            new User
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440008"),
+                FullName = "Robert Wilson",
+                Email = "robert.wilson@example.com",
+                PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p",
+                Role = Role.Customer,
+                CreatedAt = DateTime.UtcNow.AddDays(-3)
+            },
+            new User
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440009"),
+                FullName = "Jessica Martinez",
+                Email = "jessica.martinez@example.com",
+                PasswordHash = "$2a$11$4e1jY8Zzv4vYf6gblK4gWe8r7q3K2m9Zc8x5V3k1q2w3e4r5t6y7u8i9o0p",
+                Role = Role.Customer,
+                CreatedAt = DateTime.UtcNow.AddDays(-1)
             }
         );
     }

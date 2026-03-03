@@ -47,6 +47,70 @@ public class SupplierConfiguration : IEntityTypeConfiguration<Supplier>
                 RestaurantName = "Burger King Local",
                 City = "Los Angeles",
                 ImageUrl = "https://example.com/burger-king.jpg"
+            },
+            new Supplier
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440022"),
+                UserId = new Guid("550e8400-e29b-41d4-a716-446655440005"),
+                RestaurantName = "Taco Fiesta",
+                City = "Chicago",
+                ImageUrl = "https://example.com/taco-fiesta.jpg"
+            },
+            new Supplier
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440023"),
+                UserId = new Guid("550e8400-e29b-41d4-a716-446655440006"),
+                RestaurantName = "Sushi Paradise",
+                City = "Houston",
+                ImageUrl = "https://example.com/sushi-paradise.jpg"
+            },
+            new Supplier
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440024"),
+                UserId = new Guid("550e8400-e29b-41d4-a716-446655440007"),
+                RestaurantName = "Pasta House",
+                City = "Phoenix",
+                ImageUrl = "https://example.com/pasta-house.jpg"
+            },
+            new Supplier
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440025"),
+                UserId = new Guid("550e8400-e29b-41d4-a716-446655440008"),
+                RestaurantName = "BBQ Smokehouse",
+                City = "Philadelphia",
+                ImageUrl = "https://example.com/bbq-smokehouse.jpg"
+            },
+            new Supplier
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440026"),
+                UserId = new Guid("550e8400-e29b-41d4-a716-446655440009"),
+                RestaurantName = "Thai Kitchen",
+                City = "San Antonio",
+                ImageUrl = "https://example.com/thai-kitchen.jpg"
+            },
+            new Supplier
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440027"),
+                UserId = new Guid("550e8400-e29b-41d4-a716-446655440005"),
+                RestaurantName = "Greek Taverna",
+                City = "San Diego",
+                ImageUrl = "https://example.com/greek-taverna.jpg"
+            },
+            new Supplier
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440028"),
+                UserId = new Guid("550e8400-e29b-41d4-a716-446655440006"),
+                RestaurantName = "Kebab Express",
+                City = "Dallas",
+                ImageUrl = "https://example.com/kebab-express.jpg"
+            },
+            new Supplier
+            {
+                Id = new Guid("550e8400-e29b-41d4-a716-446655440029"),
+                UserId = new Guid("550e8400-e29b-41d4-a716-446655440008"),
+                RestaurantName = "Vegan Delights",
+                City = "Austin",
+                ImageUrl = "https://example.com/vegan-delights.jpg"
             }
         );
     }
