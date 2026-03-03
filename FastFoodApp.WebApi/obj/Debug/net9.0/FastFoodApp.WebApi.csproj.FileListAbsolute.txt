@@ -2,8 +2,8 @@ c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\n
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\net9.0\appsettings.json
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\net9.0\FastFoodApp.WebApi.staticwebassets.endpoints.json
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\net9.0\FastFoodApp.WebApi.exe
-C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\net9.0\FastFoodApp.WebApi.deps.json
-C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\net9.0\FastFoodApp.WebApi.runtimeconfig.json
+c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\net9.0\FastFoodApp.WebApi.deps.json
+c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\net9.0\FastFoodApp.WebApi.runtimeconfig.json
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\net9.0\FastFoodApp.WebApi.dll
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\net9.0\FastFoodApp.WebApi.pdb
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\bin\Debug\net9.0\AutoMapper.dll
@@ -167,9 +167,9 @@ c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\n
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\staticwebassets.build.json.cache
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\staticwebassets.development.json
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\FastFood.F35527C2.Up2Date
+c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\FastFood.F35527C2.Up2Date
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\FastFoodApp.WebApi.dll
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\refint\FastFoodApp.WebApi.dll
 c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\FastFoodApp.WebApi.pdb
-C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\FastFoodApp.WebApi.genruntimeconfig.cache
-C:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\ref\FastFoodApp.WebApi.dll
+c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\FastFoodApp.WebApi.genruntimeconfig.cache
+c:\Users\USER\OneDrive\Desktop\FastFoodAppBackend\FastFoodApp.WebApi\obj\Debug\net9.0\ref\FastFoodApp.WebApi.dll

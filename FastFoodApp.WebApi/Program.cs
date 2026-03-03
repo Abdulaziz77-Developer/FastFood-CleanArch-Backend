@@ -12,7 +12,10 @@ builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 
 // Add Swagger/OpenAPI documentation
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen();builder.Services.AddControllers()
+    .AddJsonOptions(options => {
+        options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+    });
 
 // Регистрируем сервисы инфраструктуры (DbContext, UnitOfWork, Repositories)
 builder.Services.AddInfrastructureServices(builder.Configuration);
