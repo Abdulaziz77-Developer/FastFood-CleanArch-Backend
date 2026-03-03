@@ -7,6 +7,7 @@ public class Order
     public decimal TotalAmount { get; set; }
     public string Status { get; set; } = "Pending"; // Pending, Processing, Shipped, Delivered
     public string DeliveryAddress { get; set; } = string.Empty;
+    public string PaymentMethod { get; set; } = string.Empty; // Cash, Card, etc.
 
     // Связь с пользователем
     public Guid UserId { get; set; }

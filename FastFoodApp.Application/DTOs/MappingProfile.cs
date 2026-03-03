@@ -53,8 +53,10 @@ public class MappingProfile : Profile
         CreateMap<UserRegisterDto, User>()
             .ForMember(d => d.PasswordHash, o => o.Ignore()); // Пароль хешируем вручную в сервисе
         CreateMap<SupplierCreateDto, Supplier>();
-        CreateMap<OrderCreateDto, Order>();
-        CreateMap<OrderItemCreateDto, OrderItem>();
+        CreateMap<OrderCreateDto, Order>()
+            .ForMember(d => d.TotalAmount, o => o.MapFrom(s => s.TotalPrice));
+        CreateMap<OrderItemCreateDto, OrderItem>()
+            .ForMember(d => d.Price, o => o.MapFrom(s => s.PricePerUnit));
 
 
         // === МАППИНГ ДЛЯ ОБНОВЛЕНИЯ (Update) ===

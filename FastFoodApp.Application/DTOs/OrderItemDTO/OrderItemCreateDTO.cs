@@ -2,5 +2,6 @@ namespace FastFoodApp.Application.DTOs.OrderItemDTO;
 
 public record OrderItemCreateDto(
     Guid FoodId,
-    int Quantity
+    int Quantity,
+    decimal PricePerUnit
 );
